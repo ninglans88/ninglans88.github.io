@@ -1,0 +1,50 @@
+﻿﻿<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+  <title>Robblog|翻译</title> 
+  <link rel="stylesheet" href="css/001.css" /> 
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> 
+  <script>
+var search_s = 1;
+function nowa() {
+        if (search_s == 1) {
+                document.getElementById("now").innerHTML = "使用有道进行翻译";
+        }
+}
+function Down() {
+        switch (event.keyCode) {
+        case 13:
+                if (search_s == 1) {
+                        var urlinput = "https://www.youdao.com/w/" + document.getElementById("Put_01").value;
+                        window.open(urlinput, "_blank");
+					    break;
+                } 
+        }
+}    
+</script> 
+  <script type="text/ecmascript">
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+	}
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+ </head> 
+ <body onkeydown="Down()"> 
+  <div id="mySidenav" class="sidenav"> 
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+   <ul> 
+    </ul> 
+   </ul> 
+  </div> 
+  <span style="font-size:30px; cursor:pointer" onclick="openNav()"></span> 
+  <div style="text-align:center;vertical-align:middle;"><br><br><br><br><br><br>
+  <input type="text" id="Put_01" placeholder="翻译" class="Yuan_Jiao" οnkeyup="keyup()"/><br>
+  </div> 
+   </div> 
+  </footer> 
+ </body>
+</html>
